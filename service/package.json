@@ -1,5 +1,5 @@
 {
-  "name": "ser",
+  "name": "service",
   "version": "1.0.0",
   "description": "",
   "private": true,
@@ -8,6 +8,8 @@
   },
   "dependencies": {
     "egg": "^2.15.1",
+    "egg-cors": "^2.2.3",
+    "egg-mysql": "^3.0.0",
     "egg-scripts": "^2.11.0"
   },
   "devDependencies": {
@@ -17,15 +19,14 @@
     "egg-ci": "^1.11.0",
     "egg-mock": "^3.21.0",
     "eslint": "^5.13.0",
-    "eslint-config-egg": "^7.1.0",
-    "moment": "^2.26.0"
+    "eslint-config-egg": "^7.1.0"
   },
   "engines": {
     "node": ">=10.0.0"
   },
   "scripts": {
-    "start": "egg-scripts start --daemon --title=egg-server-ser",
-    "stop": "egg-scripts stop --title=egg-server-ser",
+    "start": "egg-scripts start --daemon --title=egg-server-service",
+    "stop": "egg-scripts stop --title=egg-server-service",
     "dev": "egg-bin dev",
     "debug": "egg-bin debug",
     "test": "npm run lint -- --fix && npm run test-local",
